@@ -7,7 +7,6 @@ License: GPL
 URL: http://klive.cpushare.com/
 Source: %{name}-%{version}.tar.bz2
 Source1: klive.init
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
 BuildArch: noarch
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
