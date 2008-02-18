@@ -2,7 +2,7 @@ Name: klive
 Version: 20070203
 Release: %mkrel 1
 Group: Development/Kernel
-Summary: KLive is a script to gather information about kernel usage
+Summary: Script to gather information about kernel usage
 License: GPL
 URL: http://klive.cpushare.com/
 Source: %{name}-%{version}.tar.bz2
