@@ -1,6 +1,6 @@
 Name: klive
 Version: 20070203
-Release: %mkrel 1
+Release: %mkrel 2
 Group: Development/Kernel
 Summary: Script to gather information about kernel usage
 License: GPL
