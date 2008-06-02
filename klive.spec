@@ -34,10 +34,10 @@ You can access the collected statistics at http://klive.cpushare.com.
 %install
 
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_localstatedir}
-mkdir -p $RPM_BUILD_ROOT%{_localstatedir}/%{name}
+mkdir -p $RPM_BUILD_ROOT%{_localstatedir}/lib
+mkdir -p $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/rc.d/init.d
-install -m644 klive.tac -D $RPM_BUILD_ROOT%{_localstatedir}/%{name}/klive.tac
+install -m644 klive.tac -D $RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}/klive.tac
 install -c -m 0700 %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/rc.d/init.d/klive
 
 %clean
@@ -51,8 +51,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%attr(700,root,root) %dir %{_localstatedir}/%{name}
-%attr(644,root,root) %{_localstatedir}/%{name}/klive.tac
+%attr(700,root,root) %dir %{_localstatedir}/lib/%{name}
+%attr(644,root,root) %{_localstatedir}/lib/%{name}/klive.tac
 %attr(700,root,root) %{_sysconfdir}/rc.d/init.d/klive
 
 
