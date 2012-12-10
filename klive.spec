@@ -56,3 +56,43 @@ rm -rf %{buildroot}
 %attr(700,root,root) %{_sysconfdir}/rc.d/init.d/klive
 
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 20070203-6mdv2011.0
++ Revision: 619968
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 20070203-5mdv2010.0
++ Revision: 429690
+- rebuild
+
+* Fri Jul 25 2008 Thierry Vignaud <tv@mandriva.org> 20070203-4mdv2009.0
++ Revision: 247775
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 20070203-2mdv2008.1
++ Revision: 170927
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 20070203-1mdv2008.1
++ Revision: 140863
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Feb 03 2007 Emmanuel Andry <eandry@mandriva.org> 20070203-1mdv2007.0
++ Revision: 116087
+- downloaded latest version
+- %%mkrel
+- Import klive
+
+* Tue Apr 04 2006 Leonardo Chiquitto Filho <chiquitto@mandriva.com> 20060403-1mdk
+- initial release
+
