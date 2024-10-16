@@ -4,7 +4,7 @@ Release: 7
 Group: Development/Kernel
 Summary: Script to gather information about kernel usage
 License: GPL
-URL: http://klive.cpushare.com/
+URL: https://klive.cpushare.com/
 Source: %{name}-%{version}.tar.bz2
 Source1: klive.init
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
